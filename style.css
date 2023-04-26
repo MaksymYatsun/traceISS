@@ -1,0 +1,56 @@
+html,
+body,
+p,
+h1 {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: antiquewhite;
+  background-image: url("bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.info-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.issMap {
+  border-radius: 5px;
+  height: 500px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+}
